@@ -22,7 +22,7 @@ class Devices extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.grey[200],
+        color:this.state?Colors.black:Colors.grey[200],
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -32,13 +32,14 @@ class Devices extends StatelessWidget {
             Image.asset(
               pathImage,
               height: 110,
+              color: this.state? Colors.grey[200]:Colors.black,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   name,
-                  style: TextStyle(fontSize: 15, color: Colors.black),
+                  style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold, color:this.state? Colors.grey[200]:Colors.black),
                 ),
                 CupertinoSwitch(
                   value: this.state,
