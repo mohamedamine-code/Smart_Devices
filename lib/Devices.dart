@@ -14,7 +14,7 @@ class Devices extends StatelessWidget {
   Devices({
     required this.name,
     required this.pathImage,
-    required this.state,
+    this.state = false,
     this.toggle,
   });
   @override

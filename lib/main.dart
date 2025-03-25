@@ -21,6 +21,8 @@ class App extends StatelessWidget {
   }
 }
 
+
+
 class home extends StatefulWidget {
   const home({super.key});
 
@@ -144,7 +146,7 @@ class _homeState extends State<home> {
                                       MaterialPageRoute(
                                           builder: (context) => MoreDevices()));
                                 },
-                                child: Icon(Icons.arrow_back_ios)))
+                                child: Icon(Icons.arrow_back_ios))),
                       ],
                     ),
                   ),
